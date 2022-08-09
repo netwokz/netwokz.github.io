@@ -11,7 +11,7 @@ tags: [servers,dell,supermicro]
 Hello Yall.
 
 ToDo:
-* setup
+* setup ping
 
 ```python
 def ping(host):

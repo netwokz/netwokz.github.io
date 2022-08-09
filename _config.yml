@@ -83,7 +83,7 @@ theme_mode:   # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://twitter.com/ComputeError/photo
+avatar: http://pbs.twimg.com/profile_images/2284174872/7df3h38zabcvjylnyfe3.png
 
 # boolean type, the global switch for ToC in posts.
 toc: true

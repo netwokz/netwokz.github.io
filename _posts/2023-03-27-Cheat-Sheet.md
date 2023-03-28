@@ -7,7 +7,7 @@ tags: [servers,dell,supermicro]
 
 # Network Share
 
-```bash
+```shell
 sudo apt update
 sudo apt install cifs-utils
 sudo mkdir /mnt/win_share
@@ -16,17 +16,17 @@ sudo mkdir /mnt/win_share
 ## Setup credentials file
 ### Usually in root directory
 
-```bash
+```shell
 username=user
 password=password
 domain=domain
 ```
 
 ### May need to adjust permissions
-```bash
+```shell
 sudo chmod 600 /etc/win-credentials
 ```
 ### Mount share
-```bash
+```shell
 sudo mount -t cifs -o credentials=/etc/win-credentials //WIN_SHARE_IP/<share_name> /mnt/win_share
 ```

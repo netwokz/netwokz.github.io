@@ -1,5 +1,5 @@
 ---
-title: Hello World
+title: Drive Mount Cheat Sheet
 date: 2023-03-27 19:43:00 -700
 categories: [homelab,hardware]
 tags: [servers,dell,supermicro]

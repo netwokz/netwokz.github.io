@@ -1,3 +1,11 @@
+---
+title: Tarball sheat sheet
+date: 2023-03-27 22:38:00 -700
+categories: [homelab,hardware]
+tags: [servers,ubuntu,linux,plex]
+---
+
+
 # Common drive/volume resize
 
 

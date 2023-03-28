@@ -13,8 +13,7 @@ sudo apt install cifs-utils
 sudo mkdir /mnt/win_share
 ```
 
-## Setup credentials file
-### Usually in root directory
+### Setup credentials file usually in root directory
 
 ```shell
 username=user

@@ -30,3 +30,12 @@ sudo chmod 600 /etc/win-credentials
 ```shell
 sudo mount -t cifs -o credentials=/etc/win-credentials //WIN_SHARE_IP/<share_name> /mnt/win_share
 ```
+### Auto mount at boot
+```shell
+sudo nano /etc/fstab
+# <file system>             <dir>          <type> <options>                                                   <dump>  <pass>
+//WIN_SHARE_IP/share_name  /mnt/win_share  cifs  credentials=/etc/win-credentials,file_mode=0755,dir_mode=0755 0       0
+
+# Mount all fstab mounts
+mount -a
+```

@@ -11,18 +11,18 @@ tags: [servers,ubuntu,linux,plex]
 https://salmonsec.com/blogs/proxmox_lvm_disk_resize
 
 ### Find drive
-```shell
+```bash
 sudo fdisk -l
 ```
 
 ### Extend physical drive partition
-```shell
+```bash
 # "3" being the partition number
 growpart /dev/sda 3
 ```
 
 ### Update Proxmox drive
-```shell
+```bash
 pvdisplay
 # Instruct LVM that disk size has changed
 sudo pvresize /dev/sda3
@@ -31,9 +31,9 @@ pvdisplay
 ```
 
 ### Extend LV
-```shell
+```bash
 # View starting LV
-$ lvdisplay
+lvdisplay
   --- Logical volume ---
   LV Path                /dev/ubuntu-vg/ubuntu-lv
   LV Name                ubuntu-lv
@@ -51,11 +51,11 @@ $ lvdisplay
   - currently set to     256
   Block device           253:0
 # Resize LV
-$ sudo lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv
+sudo lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv
 Size of logical volume ubuntu-vg/ubuntu-lv changed from <7.00 GiB (1791 extents) to 1.46 TiB (383743 extents).
   Logical volume ubuntu-vg/ubuntu-lv successfully resized.
 # View changed LV
-$ lvdisplay
+lvdisplay
   --- Logical volume ---
   LV Path                /dev/ubuntu-vg/ubuntu-lv
   LV Name                ubuntu-lv
@@ -72,9 +72,9 @@ $ lvdisplay
   Read ahead sectors     auto
   - currently set to     256
   Block device           253:0
-  ```
+```
   
   ### Resize file system
-  ```shell
+  ```bash
   resize2fs /dev/ubuntu-vg/ubuntu-lv
   ```

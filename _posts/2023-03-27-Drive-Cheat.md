@@ -8,6 +8,7 @@ tags: [servers,ubuntu,linux,plex]
 
 # Common drive/volume resize
 
+https://salmonsec.com/blogs/proxmox_lvm_disk_resize
 
 ### Find drive
 ```shell

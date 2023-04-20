@@ -1,6 +1,6 @@
 ---
 title: Misc Cheat Sheet
-date: 2023-04-18 22:30:00 -700
+date: 2023-04-18 08:30:00 -700
 categories: [homelab,hardware]
 tags: [servers,ubuntu,linux,plex,cheat]
 ---

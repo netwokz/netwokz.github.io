@@ -13,7 +13,7 @@ type $env:USERPROFILE\.ssh\id_rsa.pub | ssh {IP-ADDRESS-OR-FQDN} "cat >> .ssh/au
 
 ### Run script from URL
 ```bash
-bash <(curl -s http://mywebsite.example/myscript.txt)
+bash <(curl -s http://mywebsite.example/myscript.sh)
 ```
 
 

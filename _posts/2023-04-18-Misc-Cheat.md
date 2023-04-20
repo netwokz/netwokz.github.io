@@ -11,6 +11,12 @@ tags: [servers,ubuntu,linux,plex,cheat]
 type $env:USERPROFILE\.ssh\id_rsa.pub | ssh {IP-ADDRESS-OR-FQDN} "cat >> .ssh/authorized_keys"
 ```
 
+### Run script from URL
+```bash
+bash <(curl -s http://mywebsite.example/myscript.txt)
+```
+
+
 ### Fix VM duplicate IP
 
 ```bash

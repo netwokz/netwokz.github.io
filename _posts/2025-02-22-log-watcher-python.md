@@ -1,3 +1,11 @@
+---
+title: Python log folder watcher
+date: 2025-02-22 14:40:00 -700
+categories: [homelab,hardware]
+tags: [servers,ubuntu,linux,docker]
+---
+
+
 Here's the complete solution in Markdown format:
 
 ```markdown

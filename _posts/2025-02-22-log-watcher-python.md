@@ -5,15 +5,11 @@ categories: [homelab,software]
 tags: [servers,ubuntu,linux,scripting,python]
 ---
 
-
-Here's the complete solution in Markdown format:
-
-```markdown
-# Log File Monitor with Systemd Service
-
-## Python Script (log_monitor.py)
+### This guide provides a complete solution for monitoring log files in a specified directory and sending notifications via ntfy.sh when files are created or modified. It includes a Python script that watches for .log file changes and a systemd service configuration to ensure the monitor runs continuously, restarting automatically on crashes or system reboots. Perfect for system administrators who need real-time alerts about log file activities.
 
 ```python
+# log_monitor.py
+
 import os
 import time
 from watchdog.observers import Observer
@@ -176,11 +172,3 @@ journalctl -u log-monitor.service
 - watchdog and requests packages
 - ntfy.sh account/topic
 - Linux system with systemd
-```
-
-To use this:
-1. Copy the entire content into a file (e.g., `log_monitor_setup.md`)
-2. Follow the instructions in the markdown to set everything up
-3. The markdown file serves as both documentation and implementation guide
-
-You can view this nicely formatted in any Markdown viewer or editor. All the code blocks will be properly syntax-highlighted when viewed in a Markdown-supporting application.

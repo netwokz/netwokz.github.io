@@ -5,28 +5,27 @@ categories: [homelab,hardware]
 tags: [servers,ubuntu,linux,plex,cheat]
 ---
 
-### Git Credentials Management
+## Git Credentials Management
+```bash
 ## Windows:
-```bash
 git config --global credential.helper wincred
-```
+
 ## Linux:
-```bash
 git config --global credential.helper store
 ```
 
-### Windows ssh-copy-id
+## Windows ssh-copy-id
 ```bash
 type $env:USERPROFILE\.ssh\id_rsa.pub | ssh {IP-ADDRESS-OR-FQDN} "cat >> .ssh/authorized_keys"
 ```
 
-### Run script from URL
+## Run script from URL
 ```bash
 bash <(curl -s http://mywebsite.example/myscript.sh)
 ```
 
 
-### Fix VM duplicate IP
+## Fix VM duplicate IP
 
 ```bash
 # Must be ran as root!
@@ -36,7 +35,7 @@ rm /var/lib/dbus/machine-id
 ln -s /etc/machine-id /var/lib/dbus/machine-id
 ```
 
-### Fix VM "disk not bootable"
+## Fix VM "disk not bootable"
 ```bash
 # Write new table
 gdisk /dev/zvol/vm-disk

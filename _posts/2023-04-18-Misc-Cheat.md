@@ -5,6 +5,15 @@ categories: [homelab,hardware]
 tags: [servers,ubuntu,linux,plex,cheat]
 ---
 
+### Git Credentials Management
+## Windows:
+```bash
+git config --global credential.helper wincred
+```
+## Linux:
+```bash
+git config --global credential.helper store
+```
 
 ### Windows ssh-copy-id
 ```bash
